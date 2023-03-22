@@ -1,0 +1,136 @@
+.App {
+  font-family: sans-serif;
+  text-align: left;
+  position: absolute;
+  right: 0px;
+  background-color: coral;
+}
+
+body {
+  /*cursor: none;*/
+}
+
+* {
+  font-family: sans-serif;
+  text-align: center;
+  align-items: center;
+  position: relative;
+  /*top: 4vh;*/
+  font-size: 20px;
+  /*border: 2px solid red;
+  border-radius: 5px;*/
+}
+
+#root {
+  position: static;
+  /*top: 50;*/
+}
+
+.coverEverything {
+  position: fixed;
+  top: 0vh;
+  left: 0vw;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+}
+
+.seeingView {
+  cursor: none;
+}
+
+.prepareMessage {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  z-index: 1;
+}
+
+.currentNumber {
+  position: fixed;
+  top: 38%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 100px;
+  z-index: 2;
+}
+
+.MainDisplay {
+  position: relative;
+  top: 100 px;
+}
+
+.numbersBoxes {
+  position: relative;
+  top: 0%;
+  left: 0%;
+  transform: translate(0, 0);
+  width: 100vw;
+}
+
+.numbersBox {
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.submitNumbersButton {
+  position: fixed;
+  top: 40vh;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.hideCursor {
+  /*cursor: none;*/
+  /*border: 2px solid red;
+  border-radius: 5px;*/
+}
+
+.startView {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.instructionsView {
+  text-align: start;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.instructionsViewParagraph {
+  text-align: start;
+}
+
+.instructionsViewParagraphInputting {
+  position: fixed;
+  top: -200%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: start;
+  width: 60vw;
+}
+
+.inputtingView {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.resultsTable {
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.resultsCel {
+  border: 2px solid black;
+  border-radius: 5px;
+}
