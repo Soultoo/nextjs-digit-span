@@ -7,12 +7,15 @@ import TestView from "./views/testView.js";
 import ResultsView from "./views/resultsView.js";
 import PreTestSettingsView from "./views/preTestSettingsView";
 
+import AudioPlayer from "./audioPlayer.js";
+
 //import styles from "./styles.css";
 
 export default function MainDisplay() {
   const [state, setState] = useContext(Context);
   return (
     <div className="mainDisplay">
+      <AudioPlayer/>
       {state.currentView === "preTestSettingsView" ? <PreTestSettingsView /> : ""}
       {state.currentView === "startView" ? <StartView /> : ""}
       {state.currentView === "instructionsView" ? <InstructionsView /> : ""}

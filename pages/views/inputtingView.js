@@ -152,6 +152,8 @@ export default function InputtingView() {
           }
         }
       }
+      
+
       setState({
         ...state,
         ["pos1Sum" + state.settingNumber]: addPointTo1
@@ -180,7 +182,7 @@ export default function InputtingView() {
           : state["pos8Sum" + state.settingNumber],
         inputNumberString: "",
         generatedString: "",
-        currentTestStage: "seeing",
+        currentTestStage: (state.trialNumber === 8 || state.generatedString === "14632857") ? "startingAudio" : "seeing",
         testingOrderIndex:
           state.trialNumber === 8 || state.generatedString === "14632857"
             ? state.testingOrderIndex + 1
@@ -199,6 +201,9 @@ export default function InputtingView() {
             : state.generatedString === "14632857"
             ? "instructionsView"
             : state.currentView,
+        playingSound1: (state.settingNumber === "2" && state.trialNumber === 8) ? false : state.playingSound1,
+        playingSound2: (state.settingNumber === "3" && state.trialNumber === 8) ? false : state.playingSound2,
+        playingSound3: (state.settingNumber === "4" && state.trialNumber === 8) ? false : state.playingSound3,
       });
     }
   }

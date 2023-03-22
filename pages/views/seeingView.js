@@ -2,12 +2,15 @@ import React, { useContext, useEffect, useState } from "react";
 import { Context } from "../Store";
 import { stringRegen } from "../numberGenerator";
 //import styles from "../styles.css";
+import useSound from "use-sound";
 
 export default function SeeingView() {
-  var msMultiplier = 0.001;
+  const [play, { stop }] = useSound('/audio/noReverbFadeOut.mp3');
+  
   const [state, setState] = useContext(Context);
   const [currentNumber, setCurrentNumber] = useState("");
   const [currentMessage, setCurrentMessage] = useState(" ");
+  var msMultiplier = state.testSpeedFactor;
   //console.log("testString" + state.settingNumber + state.trialNumber);
   var generatedString =
     state.oldStringRegenMode === true
@@ -57,8 +60,9 @@ export default function SeeingView() {
     //currentElementIndex = 0
     if (!ranEffect) {
       ranEffect = true;
-      //console.log("we are in effect");
 
+      //console.log("we are in effect");
+      
       prepareMessage();
     }
   }, []);

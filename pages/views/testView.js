@@ -3,6 +3,7 @@ import { Context } from "../Store";
 import { stringRegen } from "../numberGenerator";
 import SeeingView from "./seeingView";
 import InputtingView from "./inputtingView";
+import AudioStartView from "./audioStartView";
 //import styles from "../styles.css";
 
 export default function TestView() {
@@ -19,6 +20,7 @@ export default function TestView() {
   }, []);
   return (
     <div style={styles.boxes} className="testView">
+      {state.currentTestStage === "startingAudio" ? <AudioStartView /> : "" }
       {state.currentTestStage === "seeing" ? <SeeingView /> : "" }
       {state.currentTestStage === "inputting" ? <InputtingView /> : "" }
     </div>

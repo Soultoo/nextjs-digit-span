@@ -61,6 +61,7 @@ const initialState = {
   oldStringRegenMode: false,
   trialNumber: 1,
   settingNumber: 0,
+
   testString01: "54721836",
   testString02: "49312658",
   testString03: "14632857",
@@ -99,6 +100,12 @@ const initialState = {
 
   testingOrder: "1234",
   testingOrderIndex: 0,
+
+  playingSound1: false,
+  playingSound2: false,
+  playingSound3: false,
+
+  testSpeedFactor: 1,
 };
 
 export const Context = React.createContext();
