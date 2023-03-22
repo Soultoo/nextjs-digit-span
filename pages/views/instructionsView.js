@@ -8,7 +8,7 @@ export default function InstructionsView() {
       {state.generatedString === "00000000" ? (
         <p className="instructionsViewParagraph">
           Du kommer få vara med om ett minnestest. Din uppgift är att memorera
-          talföljder med 8 siffror, till exempel "56749123", och sedan skriva in
+          talföljder med 8 siffror, till exempel &quot;56749123&quot;, och sedan skriva in
           rätt siffra i rätt ruta så att det blir samma ordning som det du fick
           se från början.
           <br></br>
@@ -26,7 +26,7 @@ export default function InstructionsView() {
         </p>
       ) : (
         <p className="instructionsViewParagraph">
-          Nu har du fått köra dina tre övningsomgångar, tryck nu på "Starta" för
+          Nu har du fått köra dina tre övningsomgångar, tryck nu på &quot;Starta&quot; för
           att börja det riktiga testet.
         </p>
       )}
