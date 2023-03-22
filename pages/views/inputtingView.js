@@ -338,7 +338,7 @@ export default function InputtingView() {
           Tänk inte för länge på vilken siffra du stoppar i varje ruta. Om du
           har glömt vilken som ska vara där, gissa. <br></br>
           <br></br>
-          Klicka på "fortsätt" för att gå vidare till nästa talföljd.{" "}
+          Klicka på &quot;fortsätt&quot; för att gå vidare till nästa talföljd.{" "}
         </p>
       ) : (
         ""
