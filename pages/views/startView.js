@@ -20,12 +20,12 @@ export default function StartView() {
         >
           Instruktioner
         </button>
-        <button onClick={()=>{
+        {/*<button onClick={()=>{
             //play1();
             //play2();
             play3();
-          }}>play</button>
-        <button onClick={()=>stop3()}>stop</button>
+          }}>play</button>*/}
+        {/*<button onClick={()=>stop3()}>stop</button>*/}
       </p>
     </div>
   );

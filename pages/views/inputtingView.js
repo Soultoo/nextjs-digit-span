@@ -341,7 +341,7 @@ export default function InputtingView() {
           ruta genom att klicka på rutan. <br></br>
           <br></br>
           Tänk inte för länge på vilken siffra du stoppar i varje ruta. Om du
-          har glömt vilken som ska vara där, gissa. <br></br>
+          har glömt vilken som ska vara där, gissa. Varje rätt siffra i rätt position ger poäng.<br></br>
           <br></br>
           Klicka på &quot;fortsätt&quot; för att gå vidare till nästa talföljd.{" "}
         </p>

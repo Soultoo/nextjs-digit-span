@@ -4,7 +4,7 @@ import { Context } from "../Store";
 import useSound from "use-sound";
 
 export default function PreTestSettingsView() {
-  const [playTest, { stop : stopTest }] = useSound('/audio/noReverbFadeOut.mp3');
+  const [playTest, { stop : stopTest }] = useSound('/audio/no_reverb_short.mp3');
 
   const [state, setState] = useContext(Context);
 
